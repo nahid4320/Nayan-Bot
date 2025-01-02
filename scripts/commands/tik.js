@@ -10,7 +10,6 @@ config: {
   usages: "link",
   cooldowns: 5,
   dependencies: {
-        'nayan-server': '',
   }
 },
   
@@ -23,7 +22,7 @@ start: async function({ nayan, events, args }) {
   const { messageID, threadID } = events;
 
   
-  const { tikdown } = require("nayan-media-downloader")
+  const { tikdown } = require("nayan-videos-downloader")
   const fs = require("fs");
   const axios = require("axios");
   const request = require("request");
